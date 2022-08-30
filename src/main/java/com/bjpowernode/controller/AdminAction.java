@@ -23,7 +23,7 @@ public class AdminAction {
     public String login(String name , String pwd, HttpServletRequest request){
         Admin admin = adminService.login(name,pwd);
         if (admin!=null) {
-            int b  = 1 ;
+            int a = 1+1;
             //登录成功
             //携带数据传递到main.jsp
             request.setAttribute("admin",admin);
